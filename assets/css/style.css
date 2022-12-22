@@ -1,0 +1,27 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.container-fluid h1{
+    color: orange;
+    font-weight: 600;
+}
+.cntryDetails h5{
+    color: orange;
+}
+.cntryDetails p{
+    color: grey;
+    font-size: 20px;
+}
+.cntryCard{
+    height: 450px;
+}
+.cntryCard img{
+    width: 300px;
+    border-radius: 10px;
+    display: block;
+    margin: 30px auto 0;
+}
