@@ -18,7 +18,7 @@ const countries = [
       ]
     },
     {
-      name: "Åland Islands",
+      name: "Aland Islands",
       capital: "Mariehamn",
       languages: [
         "Swedish"
@@ -132,6 +132,7 @@ const countries = [
     },
     {
       name: "Antarctica",
+      capital: "Na",
       languages: [
         "English",
         "Russian"
@@ -498,6 +499,7 @@ const countries = [
     },
     {
       name: "Bouvet Island",
+      capital: "Na",
       languages: [
         "Norwegian",
         "Norwegian Bokmål",
@@ -547,6 +549,7 @@ const countries = [
     },
     {
       name: "United States Minor Outlying Islands",
+      capital: "Na",
       languages: [
         "English"
       ],
@@ -1655,6 +1658,7 @@ const countries = [
     },
     {
       name: "Heard Island and McDonald Islands",
+      capital: "Na",
       languages: [
         "English"
       ],
@@ -2219,6 +2223,7 @@ const countries = [
     },
     {
       name: "Macao",
+      capital: "Na",
       languages: [
         "Chinese",
         "Portuguese"
