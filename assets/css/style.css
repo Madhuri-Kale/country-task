@@ -25,3 +25,24 @@
     display: block;
     margin: 30px auto 0;
 }
+.mid-section button{
+    background: orange;
+    border-radius: 30px;
+    width: 160px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 15px;
+}
+.mid-section input{
+    width: 750px;
+    margin: 0 auto;
+    color: grey;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px
+}
+.mid-section a i{
+    color: orange;
+    font-size: 30px;
+    font-weight: bolder;
+}
