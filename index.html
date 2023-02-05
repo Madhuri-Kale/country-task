@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Task</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
 
     <div class="container-fluid bg-light">
-       <div class="p-3 text-center">
-        <h1>World Countries Data</h1>
-        <p>Currently, we have 250 countries</p>
-       </div>
-       <div class = "row" id="countryData">
-        <!-- <div class="card">
-            <figure class="cntryCard">
-                <img src="https://flagcdn.com/aw.svg" class="img-fluid" alt="">
-                <figcaption class="cntryDetails m-4">
-                    <h5 class="text-center">UNITED ARAB EMIRATES</h5>
-                    <p>
-                        <strong>Capital</strong>: Abu Dhabi <br>
-                        <strong>Language</strong>: Arabic <br>
-                        <strong>Population</strong>: 9,890,400
-                    </p>
-                </figcaption>
-            </figure>
-           </div> -->
-       </div>
-        
+        <div class="p-3 text-center">
+            <h1>World Countries Data</h1>
+            <p>Currently, we have 250 countries</p>
+        </div>
+        <div class="mid-section bg-white p-4 text-center">
+            <input type="search" id="findCountry" placeholder="Search countries by name, city and launguages" class="form-control bg-light mb-4">
+            <button class="btn" id="nameBtn">NAME</button>
+            <button class="btn d-none" id="nameBtnAs">NAME <i class="fa-solid fa-arrow-up"></i></button>
+            <button class="btn d-none" id="nameBtnDs">NAME <i class="fa-solid fa-arrow-down"></i></button>
+            <button class="btn" id="capitalBtn">CAPITAL</button>
+            <button class="btn d-none" id="capitalBtnAs">CAPITAL <i class="fa-solid fa-arrow-up"></i></button>
+            <button class="btn d-none" id="capitalBtnDs">CAPITAL <i class="fa-solid fa-arrow-down"></i></button>
+            <button class="btn" id="populationBtn">POPULATION</button>
+            <button class="btn d-none" id="populationBtnAs">POPULATION <i class="fa-solid fa-arrow-up"></i></button>
+            <button class="btn d-none" id="populationBtnDs">POPULATION <i class="fa-solid fa-arrow-down"></i></button>
+            <a href="" id="populationGraph"><i class="fa-solid fa-chart-column"></i></a>
+        </div>
+        <div class="row pt-3 " id="countryData">
 
-       </div>
+        </div>
+        
+        <canvas id="myChart" style="width:100%;max-width:100%"></canvas>
+        
+    </div>
     </div>
     <script src="./assets/js/country.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
+
 </html>
